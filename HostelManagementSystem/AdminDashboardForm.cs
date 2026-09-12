@@ -188,5 +188,16 @@ namespace HostelManagementSystem
 
             DashBoardpnlContent.Controls.Add(complaint);
         }
+
+        private void btnrestoredata_Click(object sender, EventArgs e)
+        {
+            DashBoardpnlContent.Controls.Clear();
+
+            A_RetoreData restoreData = new A_RetoreData();
+
+            restoreData.Dock = DockStyle.Fill;
+
+            DashBoardpnlContent.Controls.Add(restoreData);
+        }
     }
 }

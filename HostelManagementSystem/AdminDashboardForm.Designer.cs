@@ -42,12 +42,14 @@
             Studentbtn = new Button();
             dashboardbtn = new Button();
             DashBoardpnlContent = new Panel();
+            btnrestoredata = new Button();
             adminpnlSidebar.SuspendLayout();
             SuspendLayout();
             // 
             // adminpnlSidebar
             // 
             adminpnlSidebar.BackColor = SystemColors.InactiveCaption;
+            adminpnlSidebar.Controls.Add(btnrestoredata);
             adminpnlSidebar.Controls.Add(btnnotice);
             adminpnlSidebar.Controls.Add(btnlogout);
             adminpnlSidebar.Controls.Add(btnGaurdian);
@@ -70,7 +72,7 @@
             // btnnotice
             // 
             btnnotice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnnotice.Location = new Point(12, 451);
+            btnnotice.Location = new Point(12, 435);
             btnnotice.Name = "btnnotice";
             btnnotice.Size = new Size(163, 33);
             btnnotice.TabIndex = 16;
@@ -208,6 +210,17 @@
             DashBoardpnlContent.TabIndex = 1;
             DashBoardpnlContent.Paint += DashBoardpnlContent_Paint;
             // 
+            // btnrestoredata
+            // 
+            btnrestoredata.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnrestoredata.Location = new Point(12, 474);
+            btnrestoredata.Name = "btnrestoredata";
+            btnrestoredata.Size = new Size(163, 33);
+            btnrestoredata.TabIndex = 17;
+            btnrestoredata.Text = "Restore Data";
+            btnrestoredata.UseVisualStyleBackColor = true;
+            btnrestoredata.Click += btnrestoredata_Click;
+            // 
             // AdminDashboardForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -239,5 +252,6 @@
         private Button btnGaurdian;
         private Button btnlogout;
         private Button btnnotice;
+        private Button btnrestoredata;
     }
 }
